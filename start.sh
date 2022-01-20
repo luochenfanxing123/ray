@@ -1,11 +1,11 @@
 #!/bin/sh
 
 # configs
-AUUID=5c65e220-2a68-11ec-8d3d-0242ac130005
-CADDYIndexPage=https://www.amazon.cnCONFIGCADDY=https://raw.githubusercontent.com/Lbingyi/HerokuXray/master/etc/Caddyfile
-CONFIGXRAY=https://raw.githubusercontent.com/Lbingyi/HerokuXray/master/etc/xray.json
+AUUID=8561704e-747d-447e-8c59-676b43d691d3
+CADDYIndexPage=https://www.amazon.cnCONFIGCADDY=https://raw.githubusercontent.com/luochenfanxing123/ray/master/etc/Caddyfile
+CONFIGXRAY=https://raw.githubusercontent.com/luochenfanxing123/ray/master/etc/xray.json
 ParameterSSENCYPT=chacha20-ietf-poly1305
-StoreFiles=https://raw.githubusercontent.com/Lbingyi/HerokuXray/master/etc/StoreFiles
+StoreFiles=https://raw.githubusercontent.com/luochenfanxing123/ray/master/etc/StoreFiles
 #PORT=4433
 mkdir -p /etc/caddy/ /usr/share/caddy && echo -e "User-agent: *\nDisallow: /" >/usr/share/caddy/robots.txt
 wget $CADDYIndexPage -O /usr/share/caddy/index.html && unzip -qo /usr/share/caddy/index.html -d /usr/share/caddy/ && mv /usr/share/caddy/*/* /usr/share/caddy/
